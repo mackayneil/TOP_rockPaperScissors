@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src=script.js></script>
+</head>
+<body>
+    <h1>Let's Play!</h1>
+    <div class="player-choices">
+        <button id="rock" class="selection" onClick=playRound(this.id)>Rock</button>
+        <button id="paper" class="selection"  onClick=playRound(this.id)>Paper</button>
+        <button id="scissors" class="selection"  onClick=playRound(this.id)>Scissors</button>
+    </div>
+    <div class="game-results">
+        <div>
+            Player 
+            <div id="pScore" class="score-result">0</div>
+        </div>
+        <div>
+            Computer 
+            <div id="compScore" class="score-result">0</div>
+        </div>
+        Tied games
+        <div id="tie" class="score-result">0</div>
+
+        <p id="result"></p>
+    </div>
+</body>
+</html>
